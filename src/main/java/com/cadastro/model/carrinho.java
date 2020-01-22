@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class carrinho {
 	private List<produto> produtos = new ArrayList<produto>();;
-	private double total;
+	private double total = 0;
 	
 	public List<produto> getProdutos() {
 		return produtos;
@@ -12,6 +12,7 @@ public class carrinho {
 	
 	public void addProduto(produto p) {
 		produtos.add(p);
+		total = total + p.getPreco();
 	}
 	
 	public double getTotal() {
