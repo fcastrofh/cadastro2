@@ -2,7 +2,7 @@ package com.cadastro.model;
 
 public class produto {
 	private double preco;
-	private int desconto;
+	private double desconto;
 	private String tipo;
 	private String nome;
 	
@@ -14,11 +14,11 @@ public class produto {
 		preco = p;
 	}
 	
-	public int getDesconto() {
+	public double getDesconto() {
 		return desconto;
 	}
 	
-	public void setDesconto(int d) {
+	public void setDesconto(double d) {
 		desconto = d;
 	}
 	

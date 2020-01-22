@@ -13,7 +13,7 @@ public class comprar {
         return gson.toJson(compra.getCarrinho());
     }
     
-    public void adicionarProduto(double p, int d, String t, String n) {
+    public void adicionarProduto(double p, double d, String t, String n) {
     	produto produto = new produto();
     	produto.setPreco(p);
     	produto.setDesconto(d);
@@ -22,6 +22,10 @@ public class comprar {
     	
     	carro.addProduto(produto);
     	compra.setCarrinho(carro);;
+    }
+    
+    public double total() {
+    	return carro.getTotal();
     }
 
 }

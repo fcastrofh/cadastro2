@@ -19,9 +19,11 @@ public class App
             c = req.queryParams("txt_tipo");
             d = req.queryParams("txt_nome");
             
-            comprar.adicionarProduto(Double.parseDouble(a), Integer.parseInt(b), c, d);
+            comprar.adicionarProduto(Double.parseDouble(a), Double.parseDouble(b), c, d);
             
             return String.join(" AND ", a, b, c, d);
         });
+        
+        get("/total", (req, res) -> comprar.total());
     }
 }
