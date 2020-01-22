@@ -1,14 +1,10 @@
-package com.cadastro.produto;
+package com.cadastro.app;
 import static spark.Spark.*;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
     {
-        get("/hello", (req, res) -> "Hello World");
+        get("/home", (req, res) -> "Cadastro e carrinho de compras");
     }
 }
