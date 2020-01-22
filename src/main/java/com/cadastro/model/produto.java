@@ -4,6 +4,7 @@ public class produto {
 	private double preco;
 	private int desconto;
 	private String tipo;
+	private String nome;
 	
 	public double getPreco() {
 		return preco;
@@ -27,6 +28,14 @@ public class produto {
 	
 	public void setTipo(String t) {
 		tipo = t;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+	
+	public void setNome(String n) {
+		nome = n;
 	}
 
 }
