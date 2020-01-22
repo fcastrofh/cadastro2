@@ -6,6 +6,7 @@ import com.google.gson.Gson;
 public class comprar {
 	compra compra = new compra();
 	Gson gson = new Gson();
+	carrinho carro = new carrinho();
 	
     public String carrinhoDeCompras() {
     	
@@ -19,7 +20,8 @@ public class comprar {
     	produto.setTipo(t);
     	produto.setNome(n);
     	
-    	compra.getCarrinho().addProduto(produto);
+    	carro.addProduto(produto);
+    	compra.setCarrinho(carro);;
     }
 
 }

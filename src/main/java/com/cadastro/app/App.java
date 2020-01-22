@@ -18,7 +18,10 @@ public class App
             b = req.queryParams("txt_desconto");
             c = req.queryParams("txt_tipo");
             d = req.queryParams("txt_nome");
-            return "Adicionado";
+            
+            comprar.adicionarProduto(Double.parseDouble(a), Integer.parseInt(b), c, d);
+            
+            return String.join(" AND ", a, b, c, d);
         });
     }
 }
